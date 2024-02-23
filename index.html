@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/c-icon" href="IMG/logo_onglet.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Maxxi Games</title>
+    <script src="JS/script.js"></script>
+    <script src="JS/script2.js"></script>
+</head>
+
+<body>
+<div class="barre-bleu"></div>
+    <nav>
+        <div class="nav-block-left">
+            <ul>
+                <li class="lg-maxxiGames"><a href="index.html"> <img src="IMG/logo.png"
+                            alt="logoMaxxiGames" width="80"></a></li>
+                <li><a href="#">JEUX</a></li>
+                <li><a href="./HTML/consoles.html">CONSOLES</a></li>
+                <li><a href="#">ACCESSOIRES</a></li>
+                <li><a href="#">CONNEXION</a></li>
+            </ul>
+        </div>
+        <div class="nav-block-right">
+            <form action="" method="get">
+                <input class="barre-de-recherche" type="text" id="search-input" placeholder="Rechercher...">
+                <input class="loupe" type="image" src="IMG/694985.png" alt="logoRecherche">
+            </form>
+            <a href="./HTML/panier.html"><button>
+                <i class="fa-solid fa-basket-shopping"></i>
+            </button></a>
+            <button>
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+    </nav>
+    <div id="slide" class="defilementImg">
+        <div id="precedent" class="precedent">
+            <img id="reculer" class="fleche-gauche" onclick="soupe()" src="IMG/rouge.png"  alt="fleche-gauche">
+        </div>
+        <img src="IMG/PS5.jpg" id="slid" alt="fortnite" width=100%>
+        <div id="suivant" class="suivant">
+            <img class="fleche-droite" src="IMG/jaune.png" alt="fleche-droite" id="avancer" onclick="test()">
+        </div>
+    </div>
+    <div class="fleche">
+        <img src="IMG/Arrow.png" onclick="defilementVersLeBas()" class="fleche_bas" alt="">
+    </div>
+    <div class="consoles">
+        <h1>CONSOLES</h1>
+        <div class="images-consoles">
+            <a href="./HTML/LesConsoles/PS5.html"><img class="Wii" src="IMG/Wii.png" alt="Wii"></a>
+            <a href="./HTML/LesConsoles/PS5.html"><img class="ps4" src="IMG/ps4SLIM.png" alt="PS4"></a>
+            <a href="./HTML/LesConsoles/PS5.html"><img class="ps5" src="IMG/ps5.png" alt="PS5"></a>
+            <a href="./HTML/LesConsoles/PS5.html"><img class="switch" src="IMG/switch.png" alt="switch"></a>
+            <a href="./HTML/LesConsoles/PS5.html"><img class="switchLite" src="IMG/switch2.png" alt="switchLite"></a>
+            <a href="./HTML/LesConsoles/PS5.html"><img class="psvita" src="IMG/psVITA.png" alt="psvita"></a>
+            <a href="./HTML/LesConsoles/PS5.html"><img class="serieX" src="IMG/serieX.png" alt="serieX"></a>
+            <a href="./HTML/LesConsoles/PS5.html"><img class="wiiU" src="IMG/wiiU.png" alt="wiiU"></a>
+        </div>
+    </div>
+
+    <h1>Prochaines Sorties</h1>
+    <div class="images-prochainesSorties">
+        <a href="#">
+            <img src="IMG/Prince-of-Persia-The-Lost-Crown-Nintendo-Switch.png" alt="jeu" onmouseover="whatoubeh()" id="test"> 
+            <p>PRINCE OF PERSIA</p>
+        </a>
+        <video src="MP4/Prince of Persia The Lost Crown - Reveal Gameplay Trailer _ PS5 & PS4 Games.mp4" loop muted autoplay hidden id="votreDivId"></video>
+
+        <a href="#">
+            <img src="IMG/final-fantasy.jpg" alt="jeu" > 
+            <p>Final Fantasy</p>
+        </a>
+        <video src="MP4/FINAL FANTASY XVI - Trailer de lancement - PlayStation Showcase - VF - 4K _ PS5.mp4" loop hidde muted autoplay></video>
+        <a href="#">
+            <img src="IMG/theLastOfUs.webp" alt="jeu">
+            <p>The Last Of Us</p> 
+        </a>
+        <video src="MP4/The Last of Us Part II Remastered - Announce Trailer _ PS5 Games.mp4" loop autoplay muted hidden></video>
+    </div>
+    <div class="apercu-images-prochainesSorties">
+        <img src="IMG/Prince-of-Persia-The-Lost-Crown-Nintendo-Switch.png" alt="jeu">
+        <img src="IMG/final-fantasy.jpg" alt="jeu">
+        <img src="IMG/theLastOfUs.webp" alt="jeu">
+    </div>
+
+
+    <h1>Jeux PS5 <br> 3 dernières sorties</h1>
+    <div class="images-dernieresSorties">
+        <a href="#">
+            <img src="IMG/UFC5.jpg" alt="ufc5"> 
+            <p>PRINCE OF PERSIA</p>
+        </a>
+        <a href="#">
+            <img src="IMG/mw3.jpg" alt="mw3"> 
+            <p>Final Fantasy</p>
+        </a>
+        <a href="#">
+            <img src="IMG/avatar.jpg" alt="avtar">
+            <p>The Last Of Us</p> 
+        </a>
+    </div>
+    <div class="apercu-images-dernieresSorties">
+        <img src="IMG/UFC5.jpg" alt="ufc5">
+        <img src="IMG/mw3.jpg" alt="mw3">
+        <img src="IMG/avatar.jpg" alt="avtar">
+    </div>
+
+
+    <h1>Jeux Nintendo Switch <br> 3 dernières sorties</h1>
+    <div class="images-SortiesSwitch">
+        <a href="#">
+            <img src="IMG/hogwartLegacy.jpeg" alt="HogwartsLegacy"> 
+            <p>Hogwarts Legacy</p>
+        </a>
+        <a href="#">
+            <img src="IMG/theLegendOfZelda.jpg" alt="Zelda"> 
+            <p>The Legend of Zelda: Breath of the Wild</p>
+        </a>
+        <a href="#">
+            <img src="IMG/super-mario-bros-wonder-t.jpg" alt="Mario">
+            <p>Super Mario Bros. Wonder</p> 
+        </a>
+    </div>
+    <div class="apercu-images-SortiesSwitch">
+        <img src="IMG/hogwartsLegacy.jpg" alt="HogwartsLegacy">
+        <img src="IMG/theLegendOfZelda.jpg" alt="Zelda">
+        <img src="IMG/super-mario-bros-wonder-t.jpg" alt="Mario">
+    </div>
+
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-section">
+                <h3>Jeux</h3>
+                <ul>
+                    <li><a href="#">Prochaines Sorties</a></li>
+                    <li><a href="#">Meilleures ventes</a></li>
+                    <li><a href="#">Jeux Playstation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez nous</h3>
+                <ul>
+                    <li><a href="#">Support client</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="./HTML/plan_du_site.html">Plan du site</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Maxxi Games</p>
+            <p>Siège social : 22 BD GALLIENI 92390 VILLENEUVE-LA-GARENNE.</p>
+            <p>Nos conditions d'utilisation</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

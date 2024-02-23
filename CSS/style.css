@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: rgb(223, 223, 223);
+    background: linear-gradient(90deg, rgba(223, 223, 223, 1) 20%, rgba(79, 79, 203, 0.5886729691876751) 100%);
+}
+a{
+    text-decoration: none;
+}
+.barre-bleu{
+    background-color:rgb(79, 79, 203);
+    height: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    align-items: center;
+}
+
+.nav-block-left {
+    width: 50%;
+}
+.nav-block-left ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav-block-left a {
+color:black;
+text-decoration: none;
+font-weight: bold;
+
+}
+
+.nav-block-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+button{
+    padding: 1em;
+    margin: 1em;
+    background-color: rgb(200, 200, 200);
+    border:  rgb(200, 200, 200);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  rgb(79, 79, 203);
+}
+
+form{
+    display: flex;
+    align-items: center;
+    background-color: rgb(200, 200, 200) ;
+    border-radius: 5px;
+}
+
+nav input{
+    background-color: rgb(200, 200, 200);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.loupe{
+    padding: 10px;
+    width: 20px;
+}
+#slid{
+    height: auto;
+}
+
+.defilementImg {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+}
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 50px; 
+    height: auto;
+}
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+.fleche_bas{
+    transform: scaleX(-1);
+    position: relative;
+    width: 10%;
+    height: 15%;
+    cursor: pointer;
+}
+.fleche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.fleche-gauche,
+.fleche-droite {
+    top: 180px; 
+    transform: translateY(-50%); 
+    width: 50px; 
+    height: auto;
+}
+
+.fleche-gauche {
+    left: 0; 
+}
+
+.fleche-droite {
+    right: 0; 
+}
+
+.apercu-images{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em;
+}
+
+.apercuFortnite,
+.apercuFC24,
+.apercuJS,
+.apercuMario,
+.apercuPalword{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    margin: 0;
+}
+
+.consoles{
+    margin-top: 150px;
+    padding-bottom: 150px;
+}
+.consoles h1{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+h1{
+    margin-bottom: 100px;
+    text-align: left;
+    margin-left: 75px;
+}
+
+
+.images-consoles{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.images-consoles a{
+
+    width: 10%;
+    text-align: center;
+
+    border-radius: 103px;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 0px 15px 33.7px -10px rgba(0, 0, 0, 0.25);
+}
+
+.images-consoles a img{
+
+    width: 100%;
+    text-align: center;
+    border-radius: 103px;
+}
+
+.images-prochainesSorties,
+.images-dernieresSorties,
+.images-SortiesSwitch{
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+
+.images-prochainesSorties img, .images-prochainesSorties video,
+.images-dernieresSorties img,
+.images-SortiesSwitch img{
+    border-radius: 35px;
+    width: 500px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apercu-images-prochainesSorties,
+.apercu-images-dernieresSorties,
+.apercu-images-SortiesSwitch{
+    align-items: center;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.apercu-images-prochainesSorties img,
+.apercu-images-dernieresSorties img,
+.apercu-images-SortiesSwitch img{
+    width: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: -550px;
+    margin-left: -550px;
+}
+
+p{
+    text-align: center;
+}
+footer {
+    background-color: rgb(79, 79, 203);
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+h3{
+    color: black;
+}
+.footer-info {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.footer-info h3 {
+    font-size: 1.2em;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 2em;
+}
