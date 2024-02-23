@@ -1,8 +1,4 @@
-name: Deployment
-
-concurrency:
-  group: production
-  cancel-in-progress: true
+name: Déploiement Continu sur Serveur de Test
 
 on:
   push:
@@ -10,8 +6,20 @@ on:
       - main
 
 jobs:
-  deployment:
+  deploy:
     runs-on: ubuntu-latest
-    environment: production
+
     steps:
-      - name: deploy
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Deploy to Test Server
+        run: ./deploy-script.sh
